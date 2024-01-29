@@ -12,7 +12,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 	public boolean add(T item) {
 		ensureCapacity(); // First make sure there is room
 
-		items[size] = item; // Add the item being passes into the method to the next spot in the list
+		items[size] = item; // Add the item being passed into the method to the next spot in the list
 		size++; // Increase the size of the list so that next time something is added it'll go
 				// to the next spot
 
@@ -41,7 +41,6 @@ public class CustomArrayList<T> implements CustomList<T> {
 		return element;
 	}
 
-	
 // Method created to assist with add method	
 	private void ensureCapacity() {
 		if (size == items.length) { // If the current size equals the current capacity of the array, then...
